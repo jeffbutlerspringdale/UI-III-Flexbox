@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -64,3 +64,162 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body{
+	margin: 50px;
+}
+
+.main-container{
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+align-items: flex-baseline;
+column-count: 2;
+}
+
+.nav-container{
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+}
+
+.nav-container .nav-item{
+width: 200px;
+margin: 20px;
+color: grey;
+}
+
+.nav-container .logo{
+	align-self: center;
+}
+
+.services-header-img{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.services-container{
+	margin-bottom: 30px;
+}
+
+.services-container .services-title{
+	font-style: h1;
+}
+
+.digi-container{
+	background-color: white;
+	height: 230px;
+	width: 400px;
+	border: 1px solid black;
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+}
+
+.main-container .digi-container .digi-content{
+	padding: 15px;
+}
+
+button{
+justify-content: center;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-left: 15px;
+margin: 15px;
+padding-left: 30px;
+padding-right: 30px;
+background-color: white;
+border-width: 1px;
+border-color: black;
+border-style: solid;
+border-radius: 4px;
+}
+
+.ui-container{
+	background-color: white;
+	height: 230px;
+	width: 400px;
+	border: 1px solid black;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.ui-container .ui-content{
+	padding: 15px;
+}
+
+.digi-market-cotainer{
+	background-color: white;
+	height: 230px;
+	width: 400px;
+	border: 1px solid black;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.digi-market-cotainer .digi-market-content{
+padding: 15px;
+}
+
+.web-dev-container{
+	background-color: white;
+	height: 230px;
+	width: 400px;
+	border: 1px solid black;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.web-dev-container .web-dev-content{
+	padding: 15px;
+}
+
+.ios-container{
+	background-color: white;
+	height: 230px;
+	width: 400px;
+	border: 1px solid black;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.ios-container .ios-content{
+		padding: 15px;
+}
+
+.android-container {
+	background-color: white;
+	height: 230px;
+	width: 400px;
+	border: 1px solid black;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.android-container .android-content{
+		padding: 15px;
+}
+
+.bottom-container{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: flex-baseline;
+	column-count: 2;
+	margin-top:30px;
+}
+
+.bottom-container .bottom-content{
+	justify-content: flex-start;
+	width: 300px;
+}
+
+.bottom-container .Copyright{
+margin-top: 100px;
+margin-bottom: 20px;
+position: relative;
+float: left;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
